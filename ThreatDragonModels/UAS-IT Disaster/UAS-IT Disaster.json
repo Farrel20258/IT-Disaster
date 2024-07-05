@@ -1,0 +1,47 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "UAS-IT Disaster",
+    "owner": "Farrel Rizky Ramadhan, Nasywa Dhiya Ulhaq",
+    "description": "Aplikasi ini dinamakan “MyXYZ” yang dapat diakses melalui aplikasi web dan aplikasi Mobile. \"MyXYZ\" adalah aplikasi sistem yang dibuat oleh universitas XYZ untuk membantu mahasiswa dalam mendaftarkan diri, membayar tagihan, panduan akademik, dan layanan lainnya. Aplikasi ini terintegrasi dengan data pemerintah dan sistem pembayaran. Data dari MyXYZ kemudian disimpan pada database baik Cloud dan On Premise.  ",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 1,
+        "title": "Pendaftaran Mahasiswa Baru ",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.2.0",
+        "cells": [],
+        "description": "Data flow untuk mendaftarkan diri ke universitas"
+      },
+      {
+        "id": 2,
+        "title": "Pembayaran Tagihan ",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.2.0",
+        "cells": [],
+        "description": "Data flow untuk pembayaran tagihan keungan di universitas"
+      },
+      {
+        "id": 3,
+        "title": "Penyimpanan Data ",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.2.0",
+        "cells": [],
+        "description": "Penyimpanan dan pemulihan data universitas XYZ"
+      }
+    ],
+    "diagramTop": 4,
+    "reviewer": "-",
+    "threatTop": 0
+  }
+}
