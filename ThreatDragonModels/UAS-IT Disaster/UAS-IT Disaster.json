@@ -16,7 +16,1034 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": -17.5,
+              "y": -300
+            },
+            "size": {
+              "width": 130,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Mobile"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "3f4580c2-4d92-4162-95f0-8638c8d244b8",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Mobile",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": true,
+              "threats": [
+                {
+                  "id": "c2da4c65-04ba-4ea6-a369-20c7f0339612",
+                  "title": "Spoofing",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang dapat menyamar menggunakan data user untuk mendapatkan akses ilegal atau tidak ter-otorisasi",
+                  "mitigation": "Menggunakan sistem Multi Factor Authentication (MFA) saat login",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "8"
+                },
+                {
+                  "id": "3638582a-ac68-4b80-b07e-1ff425808c71",
+                  "title": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "User dapat dicegah untuk melakukan suatu tindakan",
+                  "mitigation": "Gunakan log yang aman dan tanda tangan digital",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": "4"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 2
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 470,
+              "y": -440
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Aplikasi MyXYZ"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "64767e0a-3b90-4624-9c32-191fb2248d03",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Aplikasi MyXYZ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": true,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "privilegeLevel": "5",
+              "threats": [
+                {
+                  "id": "f782600d-6a58-4228-bffa-d0c9a6d0f3f1",
+                  "title": "Spoofing",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang dapat menyamar sebagai sistem yang sah untuk mendapatkan akses yang ilegal.\n",
+                  "mitigation": "Gunakan mutual TLS dan kunci API untuk otentikasi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "9"
+                },
+                {
+                  "id": "51e847af-a903-41d0-8f27-840740d546b1",
+                  "title": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Penyangkalan terhadap pertukaran data dan pembayaran yang terjadi",
+                  "mitigation": "Implementasikan log transaksi dan tanda terima.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "5"
+                },
+                {
+                  "id": "13dab0b0-5d29-44e1-a82a-e24f45bfb626",
+                  "title": "Elevation of Privilege",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Eksploitasi antarmuka untuk mendapatkan akses tidak sah ke database, data pemerintah, dan fungsi pembayaran",
+                  "mitigation": "Terapkan kontrol akses yang ketat dan peninjauan izin secara berkala",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 3,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 2
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 970,
+              "y": -645
+            },
+            "size": {
+              "width": 140,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Integrasi \nData Pemerintahan"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "b0925998-9a01-4a3b-b319-f887fdd3ed3e",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Store",
+              "name": "Integrasi \nData Pemerintahan",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": true,
+              "storesCredentials": true,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "3494f296-3de8-4b56-8ac5-ccf773ca73a5",
+                  "title": "Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data dalam integrasi pemerintahan dapat diubah",
+                  "mitigation": "Gunakan enkripsi (SSL/TLS) dan pemeriksaan integritas secara berkala",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": "9"
+                },
+                {
+                  "id": "8ae9f6de-7601-4d6a-b4be-db6178c0720b",
+                  "title": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Menyangkal pertukaran data terjadi.",
+                  "mitigation": "Implementasikan logging yang aman dan gunakan teknik non-repudiation.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": "6"
+                },
+                {
+                  "id": "eb6fc405-189f-489a-bf3d-2be685acfeb1",
+                  "title": "Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif pemerintah dapat terungkap.",
+                  "mitigation": "Terapkan enkripsi data (SSL/TLS)  dan terapkan kontrol akses yang ketat.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": "9"
+                },
+                {
+                  "id": "9d334544-c46d-41bc-97bc-d8be50af3b63",
+                  "title": "DoS",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Layanan Pemerintah dapat dibanjiri dengan traffic sehingga layanan tidak tersedia.",
+                  "mitigation": "Gunakan pembatasan laju dan mekanisme failover.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "ee524493-255d-47f6-94f7-87ba8440757e",
+            "source": {
+              "x": 20,
+              "y": -650
+            },
+            "target": {
+              "x": -10,
+              "y": -120
+            },
+            "vertices": [
+              {
+                "x": 150,
+                "y": -550
+              },
+              {
+                "x": 200,
+                "y": -220
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "aeaed0bb-ade3-4631-ba41-d88b97f69bc7",
+            "source": {
+              "x": 1130,
+              "y": -760
+            },
+            "target": {
+              "x": 1120,
+              "y": 50
+            },
+            "vertices": [
+              {
+                "x": 750,
+                "y": -670
+              },
+              {
+                "x": 750,
+                "y": -180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Pendaftaran Perkuliahan,\nPembayaran, Layanan Akademik",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "id": "18111775-eed7-41b1-beb7-4323635c2b0e",
+                  "title": "Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data yang dikirim dapat dirubah selama transmisi",
+                  "mitigation": "Gunakan HTTPS (SSL/TLS) untuk mengenkripsi data yang sedang ditransmisikan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": "8"
+                },
+                {
+                  "id": "67f163fb-fc99-4c5a-bd3d-32c99fdeb55f",
+                  "title": "Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data Sensitif Pengguna Bisa Terungkap",
+                  "mitigation": "Menggunakan Enkripsi Data dan Gunakan Cookie yang Aman",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "8"
+                },
+                {
+                  "id": "19c29a68-96fb-47c6-8531-c97a479b4d38",
+                  "title": "DoS",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Manipulasi dengan Membanjiri Traffic sehingga layanan tidak tersedia",
+                  "mitigation": "Implementasikan pembatasan laju dan perlindungan DDoS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 2
+              }
+            },
+            "id": "796298ce-7eae-4475-a313-1df7ea6d42f6",
+            "labels": [
+              "Data Pendaftaran Perkuliahan,\nPembayaran, Layanan Akademik"
+            ],
+            "source": {
+              "cell": "966c185d-4a38-46ab-88a1-f3fef0cfbba6"
+            },
+            "target": {
+              "cell": "64767e0a-3b90-4624-9c32-191fb2248d03"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Pendaftaran\nData Mahasiswa\nData Verifikasi Mahasiswa",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "id": "ddc791a0-23f9-4503-b901-a7a2c187e7be",
+                  "title": "Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data dapat diubah selama proses transmisi data.",
+                  "mitigation": "Gunakan HTTPS (SSL/TLS) dan pemeriksaan integritas (misalnya, HMAC).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "8"
+                },
+                {
+                  "id": "b8041566-be5b-44d9-9785-4b319a96c9ad",
+                  "title": "Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif pemerintah dapat terungkap.",
+                  "mitigation": "Enkripsi data yang sedang ditransmisikan dan terapkan kontrol akses yang ketat.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "9"
+                },
+                {
+                  "id": "47087f98-808d-4de0-a21f-9ca654aee3c8",
+                  "title": "DoS",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Layanan dapat dibanjiri, sehingga tidak tersedia.",
+                  "mitigation": "Gunakan pembatasan laju dan mekanisme failover.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 2,
+                "denialOfService": 1
+              }
+            },
+            "id": "db6062be-e7d7-4627-b004-fe67f2d97c5d",
+            "labels": [
+              "Data Pendaftaran\nData Mahasiswa\nData Verifikasi Mahasiswa"
+            ],
+            "source": {
+              "cell": "64767e0a-3b90-4624-9c32-191fb2248d03"
+            },
+            "target": {
+              "cell": "b0925998-9a01-4a3b-b319-f887fdd3ed3e"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Pendaftaran Mahasiswa\nData Verifikasi Mahasiswa\nData Pembayaran Mahasiswa\nLayanan Akademik",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "id": "66bf4f5a-237e-461d-881f-ade0fd6b335b",
+                  "title": "Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data dapat dirubah selama proses transmisi berlangsung",
+                  "mitigation": "Gunakan HTTPS (SSL/TLS) untuk mengenkripsi data yang sedang ditransmisikan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "8"
+                },
+                {
+                  "id": "d78d04cf-854f-4ecb-85ce-1910cd78362f",
+                  "title": "Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif yang sedang dikirim dapat terungkap",
+                  "mitigation": "Gunakan HTTPS (SSL/TLS) untuk mengenkripsi data yang sedang ditransmisikan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": "8"
+                },
+                {
+                  "id": "e8adc5ff-6ee7-4df8-9dd0-3416335b10ea",
+                  "title": "DoS",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Layanan database dapat dibanjiri dengan traffic sehingga layanan menjadi tidak tersedia",
+                  "mitigation": "Gunakan pembatasan laju dan mekanisme failover.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "c7a13c72-93d5-402f-9181-64e6beaec3c9",
+            "source": {
+              "cell": "64767e0a-3b90-4624-9c32-191fb2248d03"
+            },
+            "target": {
+              "cell": "4e960579-964a-4b8c-add6-ec0b159bc101"
+            },
+            "vertices": [],
+            "labels": [
+              "Data Pendaftaran Mahasiswa\nData Verifikasi Mahasiswa\nData Pembayaran Mahasiswa\nLayanan Akademik"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Pembayaran Mahasiswa",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": " HTTPS",
+              "threats": [
+                {
+                  "id": "6ea2d2f8-530e-4a1a-b0b5-e9412d17cf72",
+                  "title": "Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data pembayaran dapat diubah saat proses transmisi.",
+                  "mitigation": "Gunakan enkripsi (SSL/TLS) untuk data yang dikirim dan tanda tangan digital untuk otorisasi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "9"
+                },
+                {
+                  "id": "a7314cd8-63cb-4121-a33f-5d7a65c21102",
+                  "title": "Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif pembayaran dapat terungkap.",
+                  "mitigation": "Enkripsi data pembayaran dan gunakan tokenisasi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": "8"
+                },
+                {
+                  "id": "95efdad0-2587-49f6-8525-708310caef0a",
+                  "title": "DoS",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Sistem pembayaran dapat terganggu dengan membanjiri aliran traffic.",
+                  "mitigation": " Implementasikan perlindungan DDoS dan redundansi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "id": "c547adc4-3ec8-45ff-88ba-4d21ad188aa9",
+            "source": {
+              "cell": "64767e0a-3b90-4624-9c32-191fb2248d03"
+            },
+            "target": {
+              "cell": "f1ef1960-2b1d-4055-87b5-402ece7b498b"
+            },
+            "labels": [
+              "Data Pembayaran Mahasiswa"
+            ],
+            "vertices": [
+              {
+                "x": 870,
+                "y": -260
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": -17.5,
+              "y": -540
+            },
+            "size": {
+              "width": 130,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "966c185d-4a38-46ab-88a1-f3fef0cfbba6",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Browser",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": true,
+              "threats": [
+                {
+                  "id": "8d42de8f-59fc-4f83-95bc-9d51f29b1c6e",
+                  "title": "Spoofing",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang dapat menyamar menggunakan data user untuk mendapatkan akses ilegal atau tidak ter-otorisasi",
+                  "mitigation": "Menggunakan sistem Multi-Factor Authentication (MFA) saat login",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "8"
+                },
+                {
+                  "id": "c17f8d1b-eb7f-4277-931e-da65b57e8a48",
+                  "title": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "User dapat dicegah untuk melakukan suatu tindakan",
+                  "mitigation": "Gunakan logging yang aman dan tanda tangan digital",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "4"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 3,
+                "repudiation": 3
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 1014,
+              "y": -425
+            },
+            "size": {
+              "width": 150,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Database \nCloud & OnPrem"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "4e960579-964a-4b8c-add6-ec0b159bc101",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Database \nCloud & OnPrem",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": true,
+              "storesCredentials": true,
+              "storesInventory": true,
+              "threats": [
+                {
+                  "id": "2f33b60d-3af1-4ed7-890c-39b1035e3857",
+                  "title": "Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data yang ada di database dapat dirubah.",
+                  "mitigation": "Gunakan enkripsi untuk data yang disimpan dan pemeriksaan integritas berkala.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": "8"
+                },
+                {
+                  "id": "99769bd3-6113-4a76-a5ca-2f19743bb76f",
+                  "title": "New STRIDE threat",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Penyangkalan pertukaran database.",
+                  "mitigation": "Implementasikan pencatatan database dan jejak audit.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": "5"
+                },
+                {
+                  "id": "06bb5147-c951-4978-81ea-e4d75b091576",
+                  "title": "Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data sensitif di dalam database dapat terungkap.",
+                  "mitigation": "Enkripsi data yang disimpan dan terapkan kontrol akses yang ketat.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": "8"
+                },
+                {
+                  "id": "035e044a-f4fb-4ce0-b07a-91cc7e5410fd",
+                  "title": "DoS",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Layanan database dapat dibanjiri dengan traffic sehingga tidak tersedia.",
+                  "mitigation": "Gunakan clustering database dan solusi failover.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 3,
+                "informationDisclosure": 2,
+                "denialOfService": 2
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 1004,
+              "y": -170
+            },
+            "size": {
+              "width": 150,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Pembayaran"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "f1ef1960-2b1d-4055-87b5-402ece7b498b",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Store",
+              "name": "Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": true,
+              "storesCredentials": true,
+              "storesInventory": true,
+              "threats": [
+                {
+                  "id": "55ab4c94-0d7c-43c4-a03b-309ca5910bff",
+                  "title": "Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data Pembayaran yang tersimpan dapat diubah",
+                  "mitigation": "Gunakan enkripsi (SSL/TLS) dan tanda tangan digital.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": "8"
+                },
+                {
+                  "id": "b64ab1a5-0c3d-415d-8e3a-eb679334754e",
+                  "title": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Penyangkalan pembayaran yang dilakukan",
+                  "mitigation": "Implementasikan log transaksi dan tanda terima.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": "5"
+                },
+                {
+                  "id": "6f9b27e9-63cd-4f47-9706-1d1e50356898",
+                  "title": "Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Detail Pembayaran dapat terungkap,",
+                  "mitigation": "Enkripsi data pembayaran dan gunakan tokenisasi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": "8"
+                },
+                {
+                  "id": "fea68496-15ed-42b5-93fa-140b5ed85632",
+                  "title": "DoS",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Layanan pembayaran dapat dibanjiri dengan traffic sehingga layanan tidak tersedia",
+                  "mitigation": "Implementasikan perlindungan DDoS dan redundansi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 34,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 2,
+                "denialOfService": 1
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 16,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Pendaftaran Perkuliahan,\nPembayaran, Layanan Akademik",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "id": "18111775-eed7-41b1-beb7-4323635c2b0e",
+                  "title": "Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data yang dikirim dapat dirubah selama transmisi",
+                  "mitigation": "Gunakan HTTPS (SSL/TLS) untuk mengenkripsi data yang sedang ditransmisikan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": "8"
+                },
+                {
+                  "id": "67f163fb-fc99-4c5a-bd3d-32c99fdeb55f",
+                  "title": "Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data Sensitif Pengguna Bisa Terungkap",
+                  "mitigation": "Menggunakan Enkripsi Data dan Gunakan Cookie yang Aman",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "8"
+                },
+                {
+                  "id": "19c29a68-96fb-47c6-8531-c97a479b4d38",
+                  "title": "DoS",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Manipulasi dengan Membanjiri Traffic sehingga layanan tidak tersedia",
+                  "mitigation": "Implementasikan pembatasan laju dan perlindungan DDoS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 1,
+                "denialOfService": 2
+              }
+            },
+            "id": "d6b0d8b6-24fe-445f-976c-1de96fc0aa60",
+            "labels": [
+              "Data Pendaftaran Perkuliahan,\nPembayaran, Layanan Akademik"
+            ],
+            "source": {
+              "cell": "3f4580c2-4d92-4162-95f0-8638c8d244b8"
+            },
+            "target": {
+              "cell": "64767e0a-3b90-4624-9c32-191fb2248d03"
+            },
+            "vertices": []
+          }
+        ],
         "description": "Data flow untuk mendaftarkan diri ke universitas"
       },
       {
@@ -42,6 +1069,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "-",
-    "threatTop": 0
+    "threatTop": 34
   }
 }
